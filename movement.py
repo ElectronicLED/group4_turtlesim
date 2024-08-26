@@ -4,7 +4,7 @@ from geometry_msgs.msg import Twist
 from pynput import keyboard
 
 key_states = {'w': False, 's': False, 'a': False, 'd': False}
-twist = Twist()  # Initialize the Twist message outside of functions
+twist = Twist()  
 
 def update_twist():
     global twist
@@ -34,18 +34,18 @@ def on_press(key):
     try:
         key_char = key.char
         if key_char in key_states:
-            key_states[key_char] = True
+            key_states[key_char] = True # change mode of buttom to true
             update_twist()
             pub.publish(twist)
     except AttributeError:
         pass
 
 def on_release(key):
-    global key_states  # Declare key_states as global to avoid UnboundLocalError
+    global key_states  
     try:
         key_char = key.char
         if key_char in key_states:
-            key_states[key_char] = False
+            key_states[key_char] = False # change mode of buttom to false
             update_twist()
             pub.publish(twist)
     except AttributeError:
@@ -58,6 +58,7 @@ def on_release(key):
 
 def publish_action():
     global pub
+    # init node as publisher
     rospy.init_node('turtle_controller_node', anonymous=True)
     pub = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=10)
     rospy.loginfo("Turtle action publisher is ready. Use W, A, S, D to move.")
@@ -73,5 +74,3 @@ if __name__ == '__main__':
         pass
     except KeyboardInterrupt:
         pass
-
-    
