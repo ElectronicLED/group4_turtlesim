@@ -1,0 +1,8 @@
+prefix=/home/bodyahmed/task9_ws/install
+
+Name: turtle_attack
+Description: Description of turtle_attack
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
