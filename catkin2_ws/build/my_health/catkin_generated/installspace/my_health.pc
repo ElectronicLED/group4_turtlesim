@@ -1,0 +1,8 @@
+prefix=/home/ahmed/catkin2_ws/install
+
+Name: my_health
+Description: Description of my_health
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

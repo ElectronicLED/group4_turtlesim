@@ -1,0 +1,2 @@
+my_health
+-DCATKIN_DEVEL_PREFIX=/home/ahmed/catkin2_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ahmed/catkin2_ws/install -G Unix Makefiles
