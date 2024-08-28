@@ -10,4 +10,4 @@ i push my Workspace for the attack node that
 ----------------->Note<---------------
 the attack node named 'Attack' is: attack.py (the main code)
 the other nodes(pubRange , subAttack , subCount).py is just for the testing
-[so if i run the attack node it won't work bec, the checkRnage variable is not defined so we must run the pubRange node]
+[so if i run the attack node alone ,it won't work because the checkRnage variable is not defined so we must run the pubRange node]
