@@ -2,7 +2,7 @@ i push my Workspace for the attack node that
 	->publish a string 'attack' to topic 'turtle1_attack'
 	->subscribes to topic 'withinRange' its meassage type is boolen
 	->publishes an int8 to topic 'attack_count'
-	->it checks if the turtle is within the range then checks if the key 'q' is pressed so 		  it publishes a string 'attack' and incriments the counter by 1
+	->it checks if the turtle is within the range then checks if the key 'q' is pressed so 		  it publishes a string 'attack' and incriments the counter by 1 and publishes an int8 'counter'
 	-> if the turtle is out the range the node prints 'Out of Rnage'
 	
 	
